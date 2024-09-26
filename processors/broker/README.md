@@ -15,15 +15,19 @@ Before you proceed, build the [gecholog](https://github.com/direktoren/gecholog)
 
 Make sure you have (at least) two Azure OpenAI deployments. For example
 
+```sh
   gpt4
   gpt35turbo
+```
 
 From this directory, run
 
+```sh
   export NATS_TOKEN=changeme
   export GUI_SECRET=changeme
   export AISERVICE_API_BASE=https://your.openai.azure.com/
   docker compose up -d
+```
 
 > NOTE: If you want to use other Azure OpenAI deployments, [log in](http://localhost:8080/login) and update the two routers `/azure/gpt35turbo/` and `/azure/gpt4/` with the correct deployment information.
 

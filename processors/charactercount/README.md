@@ -10,9 +10,11 @@ Before you proceed, build the [gecholog](https://github.com/direktoren/gecholog)
 
 From this directory, run
 
+```sh
   export NATS_TOKEN=changeme
   export GUI_SECRET=changeme
   docker compose up -d
+```
 
 ## Using
 
